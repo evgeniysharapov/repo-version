@@ -1,0 +1,29 @@
+{
+  "name": "repo-version",
+  "version": "1.0.0",
+  "description": "Utility functions that allow to get revision/changeset hash from Mercurial/Git repository files of the application  within the application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --reporter spec  --compilers js:babel-core/register test"
+  },
+  "keywords": [
+    "git",
+    "mercurial",
+    "hg",
+    "revision",
+    "changeset",
+    "commit",
+    "version"
+  ],
+  "author": "Evgeniy Sharapov <evgeniy.sharapov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "highland": "^2.10.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "mocha": "^3.1.2"
+  }
+}
