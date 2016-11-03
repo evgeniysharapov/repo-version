@@ -15,6 +15,10 @@
     "commit",
     "version"
   ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/evgeniysharapov/repo-version.git"
+  },
   "author": "Evgeniy Sharapov <evgeniy.sharapov@gmail.com>",
   "license": "MIT",
   "dependencies": {
