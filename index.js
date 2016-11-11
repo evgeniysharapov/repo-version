@@ -35,8 +35,16 @@ const currentRevision = (_errorLogger) => {
 	readFile(`${ROOT_DIR}/.git/HEAD`)
 	    .stopOnError(e => errorLogger(e))
 	    .map(toString)
-	    .map(data => /:(.+)/.exec(data)[1].trim()) // get the ref path
-	    .flatMap(path => readFile(`${ROOT_DIR}/.git/${path}`)) // read file with commit hash
+	    .flatMap(data => {
+		let m = /:(.+)/.exec(data);
+		if (m) {
+		     // read file with commit hash
+		    let path = m[1].trim();
+		    return readFile(`${ROOT_DIR}/.git/${path}`)
+		} else {
+		    return data;
+		}
+	    })
 	    .map(toString)
 	,
 	// Work with Mercurial repo
