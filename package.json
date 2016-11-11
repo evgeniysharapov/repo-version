@@ -1,6 +1,6 @@
 {
   "name": "repo-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility functions that allow to get revision/changeset hash from Mercurial/Git repository files of the application  within the application.",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "commit",
     "version"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/evgeniysharapov/repo-version.git"
   },
