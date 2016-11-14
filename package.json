@@ -1,6 +1,6 @@
 {
   "name": "repo-version",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility functions that allow to get revision/changeset hash from Mercurial/Git repository files of the application  within the application.",
   "main": "index.js",
   "scripts": {
