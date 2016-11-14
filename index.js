@@ -42,7 +42,7 @@ const currentRevision = (_errorLogger) => {
 		    let path = m[1].trim();
 		    return readFile(`${ROOT_DIR}/.git/${path}`)
 		} else {
-		    return data;
+		    return _([data]);
 		}
 	    })
 	    .map(toString)
